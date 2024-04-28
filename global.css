@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .label-join {
+    @apply flex flex-col py-2 text-lg text-neutral-600;
+  }
+  .label-join:focus {
+    @apply flex flex-col py-2 text-lg text-blue-400;
+  }
+
+  .div-join {
+    @apply h-auto rounded-md border-2 border-gray-300 p-2 text-left;
+  }
+  .div-join:focus {
+    @apply border-blue-400;
+  }
+
+  .div-error {
+    @apply pb-4 pl-1 text-sm text-red-500;
+  }
+
+  .a-footer {
+    @apply text-neutral-500;
+  }
+  .a-footer:hover {
+    @apply underline;
+  }
+
+  .a-notice {
+    @apply text-blue-400;
+  }
+  .a-notice:hover {
+    @apply underline;
+  }
+}
+
+@layer base {
+  input {
+    @apply outline-none;
+  }
+}
